@@ -1,13 +1,58 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../imgs/logo-azul.png" type="image/x-icon">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/index.css">
+
     <title>Adopet | Início</title>
 </head>
+
 <body>
-    
+    <header class="pet-header position-fixed w-100 p-5">
+        <div class="container">
+            <div class="row justify-content-sm-start align-items-center px-5">
+                <a class="pet-header__link" href="/src/assets/pages/index.html"><img src="../imgs/Logo.svg" class="pet-header__img-header d-block" alt="Logo Adopet"></a>
+                <a class="pet-header__link" href="#"><img src="../imgs/casa.png" class="pet-header__img-header d-block" alt="Ícone casinha"></a>
+                <a class="pet-header__link" href="#"><img src="../imgs/mensagens.png" class="pet-header__img-header d-block" alt="Ícone mensagens"></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pet-main">
+        <section class="pet-main__home">
+            <img class="pet-main__logo mx-auto d-block" src="../imgs/Logo.svg" alt="Logo Adopet">
+
+            <div class="container col-4 text-center mt-5">
+                <h2 class="pet-main__title h1 color-txt mb-4">Boas-vindas!</h2>
+                <p class="pet-main__subtitle color-txt">Adotar pode mudar uma vida. Que tal buscar seu novo melhor amigo hoje? Vem com a gente!</p>
+            </div>
+
+            <div class="container col-3 mt-4">
+                <div class="row d-flex flex-column g-2 mx-auto">
+                    <button class="btn btn-primary color-bg-button" type="submit">Já tenho conta</button>
+                    <button class="btn btn-primary color-bg-button" type="submit">Quero me cadastrar</button>
+                </div>
+            </div>
+        </section>
+        <div class="bg-doguinhos-ilustracao"></div>
+    </main>
+
+    <footer class="pet-footer py-4">
+        <p class="pet-footer__author text-center color-txt m-0">2022 - Desenvolvido por Challenge Alura by <a class="pet-footer__link pet-link" href="https://www.linkedin.com/in/anthoni-broering-dos-santos-483774119/" target="_blank">Anthoni Broering dos Santos</a></p>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

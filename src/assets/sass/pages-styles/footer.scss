@@ -1,0 +1,5 @@
+@use '../variables';
+
+.pet-footer {
+    background-color: variables.$color-bg-footer;
+}

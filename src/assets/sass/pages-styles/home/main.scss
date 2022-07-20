@@ -1,0 +1,47 @@
+@use '../../variables';
+
+.pet-main  {
+    padding-top: 130px;
+    height: calc(100vh - 72px);
+    background-color: variables.$color-bg-home;
+ 
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        height: 100%;
+        width: 580px;
+        z-index: 1;
+        background-image: url('/src/assets/imgs/forma-1.svg');
+        background-repeat: no-repeat;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        right:  0;
+        top: 0;
+        display: block;
+        height: 100%;
+        width: 120px;
+        z-index: 1;
+        background-image: url('/src/assets/imgs/forma-2.svg');
+        background-repeat: no-repeat;
+    }
+
+
+    &__logo {
+        height: 64px;
+        width: auto;
+    }
+
+    &__title {
+        font-size: 1.75rem;
+    }
+
+    &__subtitle {
+        font-size: 1.125rem;
+    }    
+}

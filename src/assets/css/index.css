@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+body {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.color-bg-button {
+  background-color: #FC7071;
+  transition: background-color 0.3s;
+  border: 1px solid #FC7071;
+}
+.color-bg-button:hover {
+  background-color: #e75656;
+  border: 1px solid #e75656;
+}
+
+.color-txt {
+  color: #fff;
+}
+
+.pet-link {
+  color: #fff;
+  text-decoration: none;
+}
+.pet-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.pet-header {
+  z-index: 100;
+}
+.pet-header__img-header {
+  height: 23px;
+  width: auto;
+}
+.pet-header__link {
+  width: auto;
+}
+
+.pet-footer {
+  background-color: #36D6AD;
+}
+
+.pet-main {
+  padding-top: 130px;
+  height: calc(100vh - 72px);
+  background-color: #3772FF;
+}
+.pet-main::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  height: 100%;
+  width: 580px;
+  z-index: 1;
+  background-image: url("/src/assets/imgs/forma-1.svg");
+  background-repeat: no-repeat;
+}
+.pet-main::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  height: 100%;
+  width: 120px;
+  z-index: 1;
+  background-image: url("/src/assets/imgs/forma-2.svg");
+  background-repeat: no-repeat;
+}
+.pet-main__logo {
+  height: 64px;
+  width: auto;
+}
+.pet-main__title {
+  font-size: 1.75rem;
+}
+.pet-main__subtitle {
+  font-size: 1.125rem;
+}
+
+/*# sourceMappingURL=index.css.map */

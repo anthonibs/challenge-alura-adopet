@@ -1,0 +1,34 @@
+@use 'variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+body {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.color-bg-button {
+    background-color: variables.$color-bg-btn;
+    transition: background-color .3s;
+    border: 1px solid variables.$color-bg-btn;
+
+    &:hover {
+        background-color: variables.$color-bg-btn-hover;
+        border: 1px solid variables.$color-bg-btn-hover;
+    }
+}
+
+.color-txt {
+    color: variables.$color-txt;
+}
+
+.pet-link {
+    color: variables.$color-txt;
+    text-decoration: none;
+
+    &:hover {
+        color:  variables.$color-txt;
+        text-decoration: underline;
+    }
+}

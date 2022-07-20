@@ -1,0 +1,14 @@
+@use '../variables';
+
+.pet-header {
+    z-index: 100;
+
+    &__img-header {
+        height: 23px;
+        width: auto;
+    }
+
+    &__link {
+        width: auto;
+    }
+}

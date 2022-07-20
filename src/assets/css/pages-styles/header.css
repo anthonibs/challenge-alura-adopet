@@ -1,0 +1,12 @@
+.pet-header {
+  z-index: 100;
+}
+.pet-header__img-header {
+  height: 23px;
+  width: auto;
+}
+.pet-header__link {
+  width: auto;
+}
+
+/*# sourceMappingURL=header.css.map */
