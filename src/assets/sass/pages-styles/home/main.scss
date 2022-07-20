@@ -1,10 +1,12 @@
 @use '../../variables';
 
-.pet-main  {
+.pet-main {
+    position: relative;
     padding-top: 130px;
-    height: calc(100vh - 72px);
+    height: calc(100vh - 60px);
     background-color: variables.$color-bg-home;
- 
+    overflow: hidden;
+
     &::after {
         content: '';
         position: absolute;
@@ -12,25 +14,30 @@
         top: 0;
         display: block;
         height: 100%;
-        width: 580px;
+        width: 100%;
         z-index: 1;
         background-image: url('/src/assets/imgs/forma-1.svg');
         background-repeat: no-repeat;
+        background-size: contain;
     }
 
     &::before {
         content: '';
         position: absolute;
-        right:  0;
-        top: 0;
+        right: -25px;
+        top: 25%;
         display: block;
         height: 100%;
-        width: 120px;
+        width: 100px;
         z-index: 1;
         background-image: url('/src/assets/imgs/forma-2.svg');
         background-repeat: no-repeat;
+        background-size: contain;
     }
 
+    &__home {
+        height: 100%;
+    }
 
     &__logo {
         height: 64px;
@@ -43,5 +50,86 @@
 
     &__subtitle {
         font-size: 1.125rem;
-    }    
+    }
+
+}
+
+@media (min-width:360px) {
+    .bg-pets-ilustracao {
+        position: absolute;
+        bottom: -20px;
+        height: 30%;
+        width: 100%;
+        background-image: url('/src/assets/imgs/Ilustracao-pets.png');
+        background-position-x: center;
+        background-position-y: bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+
+@media (min-width: 420px) {
+    .pet-main {
+        position: relative;
+        padding-top: 130px;
+        height: calc(100vh - 60px);
+        background-color: variables.$color-bg-home;
+        overflow: hidden;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: block;
+            height: 45%;
+            width: 100%;
+            z-index: 1;
+            background-image: url('/src/assets/imgs/forma-1.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            right: -25px;
+            top: 25%;
+            display: block;
+            height: 100%;
+            width: 100px;
+            z-index: 1;
+            background-image: url('/src/assets/imgs/forma-2.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .pet-main {
+           &::after {
+            height: 50%;
+        }
+
+        &__home {
+            padding-top: 120px;
+        }
+
+    }
+
+    .bg-pets-ilustracao {
+        height: 30%;    
+    }
+}
+
+@media (min-width: 1200px) {
+    .pet-main__home {
+        padding-top: 0;
+    }
+
+    .bg-pets-ilustracao {
+        height: 45%;
+    }
 }

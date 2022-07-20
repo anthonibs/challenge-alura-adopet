@@ -1,0 +1,19 @@
+@use '../../variables';
+
+.pet-header {
+   
+    &__control {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__user {
+        margin-right: 174px;
+    }
+}
+
+.tes {
+    position: relative;
+    padding-top: 160px;
+    background-color: blueviolet;
+}

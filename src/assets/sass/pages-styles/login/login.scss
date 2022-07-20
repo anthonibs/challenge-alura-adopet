@@ -1,0 +1,31 @@
+@use '../../variables';
+
+@media (min-width: 360px) {
+    .pet-login {
+
+        &__subtitle {
+            font-size: 1rem;
+        }
+
+        &__forgot-link {
+            font-size: 0.75rem;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline variables.$color-txt-2;
+            }
+        }
+    }
+}
+
+@media (min-width: 772px) {
+    .pet-login {
+        &__subtitle {
+            font-size: 1.125rem;
+        }
+
+        &__forgot-link {
+            font-size: 1rem;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@use '../../variables';
+
+.pet-form {
+    z-index: 1000;
+
+    .bi {
+        font-size: 1.3rem;
+        cursor: pointer;
+        color: variables.$color-txt-input;
+        padding: .2rem .4rem;
+        right: .5rem;
+    }
+}
+
+@media (min-width: 360px) {
+    .pet-template__logo {
+        height: 32px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 572px) {
+    .pet-template__logo {
+        height: 64px;
+    }
+}
+

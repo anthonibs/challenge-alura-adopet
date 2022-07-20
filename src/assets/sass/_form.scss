@@ -1,0 +1,58 @@
+@use 'variables';
+
+
+@media (min-width: 360px) {
+    .pet-form {
+        z-index: 1000;
+
+        &__label {
+            color: variables.$color-title-input;
+            font-weight: 400;
+            font-size: 1.125rem;
+            line-height: 24px;
+        }
+
+        &__input {
+            background-color: variables.$color-bg-input;
+            border: none;
+            padding: .5rem;
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+            color: variables.$color-txt-input;
+
+            &::placeholder {
+                font-size: .75rem;
+                color: variables.$color-txt-input;
+            }
+
+            &:focus {
+                color: variables.$color-txt-input;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 772px) {
+    .pet-form {
+        &__input {
+            &::placeholder {
+                font-size: .875rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .pet-form {
+
+        &__label {
+            font-weight: 600;
+        }
+
+        &__input {
+            &::placeholder {
+                font-size: 1rem;
+            }
+        }
+    }
+}

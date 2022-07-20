@@ -1,8 +1,10 @@
 @use 'base.scss';
 @use 'variables';
+@use 'form';
 @use 'pages-styles/header.scss';
 @use 'pages-styles/footer.scss';
 
 @use 'pages-styles/home/main.scss';
-
-
+@use 'pages-styles/cadastro/cadastro.scss';
+@use 'pages-styles/login/login.scss';
+@use 'pages-styles/galeria/galeria.scss';

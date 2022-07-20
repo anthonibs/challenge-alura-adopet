@@ -1,5 +1,26 @@
 @use '../variables';
 
 .pet-footer {
+    position: relative;
+    height: 60px;
     background-color: variables.$color-bg-footer;
+}
+
+@media (min-width: 360px) {
+    .pet-footer__author {
+        font-size: .7rem;
+        line-height: normal;
+    }
+}
+
+@media (min-width: 572px) {
+    .pet-footer__author {
+        font-size: .9rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .pet-footer__author {
+        font-size: 1rem;
+    }
 }
