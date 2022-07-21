@@ -1,7 +1,7 @@
 @use '../../variables';
 
 .pet-header {
-   
+
     &__control {
         display: flex;
         justify-content: flex-end;
@@ -12,8 +12,51 @@
     }
 }
 
-.tes {
-    position: relative;
-    padding-top: 160px;
-    background-color: blueviolet;
+.pet-gallery {
+
+    &__title {
+        font-size: 1.125rem;
+    }
+
+    &__pet-image {
+        display: block;
+        object-fit: contain;
+        margin-left: auto;
+    }
+
+    &__description {
+        font-size: .875rem;
+        line-height: 1.25rem;
+        color: variables.$color-txt-body;
+    }
+
+    &__regional {
+        font-size: .75rem;
+        color: variables.$color-txt-body;
+        line-height: 1;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        font-size: .625rem;
+        line-height: 25px;
+        text-decoration: none;
+        color: variables.$color-txt-body;
+
+        &:hover {
+            text-decoration: underline;
+            color: variables.$color-txt-body;
+        }
+
+        &::before {
+            content: '';
+            position: relative;
+            margin-right: .325rem;
+            height: 18px;
+            width: 18px;
+            background-image: url('/src/assets/imgs/ícone-mensagem.svg');
+            background-repeat: no-repeat;
+        }
+    }
 }
