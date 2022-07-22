@@ -29,55 +29,59 @@
             </div>
 
             <div class="pet-header__control w-25">
-                <img class="pet-header__user" id="profile-img" src="https://www.istoedinheiro.com.br/wp-content/uploads/sites/17/istoeimagens/imagens/mi_7274773287768763.jpg" alt="Ícone de usuário">
+                <img class="pet-header__user" id="profile-img"
+                    src="https://www.istoedinheiro.com.br/wp-content/uploads/sites/17/istoeimagens/imagens/mi_7274773287768763.jpg"
+                    alt="Ícone de usuário">
             </div>
         </div>
     </header>
 
-    <main class="pet-contact pet-color-bg-custom">
-        <section class="container pet-contact__section">
-            <h1 class="color-txt-1 text-center col-10 col-md-8 col-xl-6 mx-auto pet-contact__title">Esse é o perfil que aparece para responsáveis ou ONGs que recebem sua mensagem.</h1>
-
-            <form action="" class="pet-contact__form col-10 col-md-8 col-lg-10 col-xl-6 mx-auto">
-                <fieldset class="mb-3 pet-contact__control">
-                    <div>
+    <main class="pet-profile pet-color-bg-custom">
+        <section class="container-fluid pet-profile__section p-0">
+            <div class="pet-container">
+                <h1 class="color-txt-1 text-center fw-normal col-10 col-sm-8 col-lg-7 col-xl-4 mx-auto pet-profile__title">Esse é o perfil que
+                    aparece para responsáveis ou ONGs que recebem sua mensagem.</h1>
+                <form action="" class="pet-profile__form col-10 col-sm-8 col-lg-10 col-xl-4 mx-auto">
+                    <h2 class="pet-profile__subtitle text-center col-12 mx-auto pt-5 pb-3">Perfil</h2>
+                    <fieldset class="mb-3 pet-profile__control">
                         <label for="input-nome-contato"
-                            class="form-label pet-contact__label color-txt-1 fw-bold">Foto</label>
-                        <input type="file" class="form-control pet-contact__input" id="input-nome-contato"
+                            class="form-label pet-profile__label color-txt-1 fw-bold">Foto</label>
+                        <div class="pet-profile__group mx-auto" id="alterar-img">
+                            <img class="pet-profile__img"
+                                src="https://www.istoedinheiro.com.br/wp-content/uploads/sites/17/istoeimagens/imagens/mi_7274773287768763.jpg"
+                                alt="Foto de perfil" id="img-profile">
+                            <input type="file" class="form-control pet-profile__input" id="input-nome-foto"
+                                placeholder="Insira seu nome completo">
+                        </div>
+                        <span class="pet-profile__message text-center d-block mx-auto">Clique na foto para editar</span>
+                    </fieldset>
+                    <fieldset class="mb-3 pet-profile__control">
+                        <label for="input-nome-contato"
+                            class="form-label pet-profile__label color-txt-1 fw-bold">Nome</label>
+                        <input type="text" class="form-control pet-profile__input" id="input-nome-contato"
                             placeholder="Insira seu nome completo">
-                    </div>
-                    <span>Clique na foto para editar</span>
-                </fieldset>
-
-                <fieldset class="mb-3 pet-contact__control">
-                    <label for="input-nome-contato"
-                        class="form-label pet-contact__label color-txt-1 fw-bold">Nome</label>
-                    <input type="text" class="form-control pet-contact__input" id="input-nome-contato"
-                        placeholder="Insira seu nome completo">
-                </fieldset>
-
-                <fieldset class="mb-3 pet-contact__control">
-                    <label for="input-telefone-contato"
-                        class="form-label pet-contact__label color-txt-1 fw-bold">Telefone</label>
-                    <input type="text" class="form-control pet-contact__input" id="input-telefone-contato"
-                        placeholder="Insira seu telefone e/ou whatsapp">
-                </fieldset>
-
-                <fieldset class="mb-3 pet-contact__control">
-                    <label for="input-animal-contato" class="form-label pet-contact__label color-txt-1 fw-bold">Cidade</label>
-                    <input type="text" class="form-control pet-contact__input" id="input-animal-contato"
-                        placeholder="Em qual cidade você está?">
-                </fieldset>
-
-                <fieldset class="mb-3 pet-contact__control">
-                    <label for="textarea-mensagem-contato"
-                        class="form-label pet-contact__label color-txt-1 fw-bold">Sobre</label>
-                    <textarea class="form-control pet-contact__textarea" id="textarea-mensagem-contato" rows="3"
-                        placeholder="Conter mais sobre você."></textarea>
-                </fieldset>
-
-                <button type="submit" class="btn color-bg-button color-txt mt-4 col-6 d-block mx-auto">Salvar</button>
-            </form>
+                    </fieldset>
+                    <fieldset class="mb-3 pet-profile__control">
+                        <label for="input-telefone-contato"
+                            class="form-label pet-profile__label color-txt-1 fw-bold">Telefone</label>
+                        <input type="text" class="form-control pet-profile__input" id="input-telefone-contato"
+                            placeholder="Insira seu telefone e/ou whatsapp">
+                    </fieldset>
+                    <fieldset class="mb-3 pet-profile__control">
+                        <label for="input-animal-contato"
+                            class="form-label pet-profile__label color-txt-1 fw-bold">Cidade</label>
+                        <input type="text" class="form-control pet-profile__input" id="input-animal-contato"
+                            placeholder="Em qual cidade você está?">
+                    </fieldset>
+                    <fieldset class="mb-3 pet-profile__control">
+                        <label for="textarea-mensagem-contato"
+                            class="form-label pet-profile__label color-txt-1 fw-bold">Sobre</label>
+                        <textarea class="form-control pet-profile__textarea" id="textarea-mensagem-contato" rows="3"
+                            placeholder="Conter mais sobre você."></textarea>
+                    </fieldset>
+                    <button type="submit" class="btn color-bg-button color-txt mt-4 col-6 d-block mx-auto">Salvar</button>
+                </form>
+            </div>
         </section>
     </main>
 
@@ -94,6 +98,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
