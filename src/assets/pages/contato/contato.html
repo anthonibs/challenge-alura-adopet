@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../imgs/favicton-adopet.png" type="image/x-icon">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="../../style/styles.css">
+
+    <title>Adopet | Contato</title>
+</head>
+
+<body>
+    <header class="pet-header position-absolute w-100 mt-2 mt-sm-0 p-4 p-sm-5 container-fluid">
+        <div class="row  justify-content-between align-items-center p-1 mx-xl-5 w-100">
+            <div class="d-flex w-75">
+                <a class="pet-header__link d-none d-none d-sm-block px-3" href="/src/assets/pages/index.html"><img
+                        src="../../imgs/Logo.svg" class="pet-header__img-header d-block" alt="Logo Adopet"></a>
+                <a class="pet-header__link px-4" href="#"><img src="../../imgs/casa.png"
+                        class="pet-header__img-header d-block" alt="Ícone casinha"></a>
+                <a class="pet-header__link  px-4" href="#"><img src="../../imgs/mensagens.png"
+                        class="pet-header__img-header d-block" alt="Ícone mensagens"></a>
+            </div>
+
+            <div class="pet-header__control w-25">
+                <img class="pet-header__user" src="../../imgs/usuario.svg" alt="Ícone de usuário">
+            </div>
+        </div>
+    </header>
+
+    <main class="pet-contact pet-color-bg-custom">
+        <section class="container pet-contact__section">
+            <h1 class="color-txt-1 text-center col-10 col-md-8 col-xl-6 mx-auto pet-contact__title">Envie uma mensagem para a pessoa ou instituição que está cuidando do animal:</h1>
+
+            <form action="" class="pet-contact__form col-10 col-md-8 col-lg-10 col-xl-6 mx-auto">
+                <fieldset class="mb-3 pet-contact__control">
+                    <label for="input-nome-contato" class="form-label pet-contact__label color-txt-1 fw-bold">Nome</label>
+                    <input type="text" class="form-control pet-contact__input" id="input-nome-contato"
+                        placeholder="Insira seu nome completo">
+                </fieldset>
+
+                <fieldset class="mb-3 pet-contact__control">
+                    <label for="input-telefone-contato" class="form-label pet-contact__label color-txt-1 fw-bold">Telefone</label>
+                    <input type="text" class="form-control pet-contact__input" id="input-telefone-contato" placeholder="Insira seu telefone e/ou whatsapp">
+                </fieldset>
+
+                <fieldset class="mb-3 pet-contact__control">
+                    <label for="input-animal-contato" class="form-label pet-contact__label color-txt-1 fw-bold">Nome do animal</label>
+                    <input type="text" class="form-control pet-contact__input" id="input-animal-contato" placeholder="Por qual animal você se interessou?">
+                </fieldset>
+
+                <fieldset class="mb-3 pet-contact__control">
+                    <label for="textarea-mensagem-contato" class="form-label pet-contact__label color-txt-1 fw-bold">Mensagem</label>
+                    <textarea class="form-control pet-contact__textarea" id="textarea-mensagem-contato" rows="3"
+                        placeholder="Escreva sua mensagem"></textarea>
+                </fieldset>
+
+                <button type="submit" class="btn color-bg-button color-txt mt-4 col-6 d-block mx-auto">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="pet-footer d-flex align-items-center justify-content-center container-fluid">
+        <div class="row">
+            <p class="pet-footer__author text-center color-txt m-0">2022 - Desenvolvido por Challenge Alura by <a
+                    class="pet-footer__link pet-link"
+                    href="https://www.linkedin.com/in/anthoni-broering-dos-santos-483774119/" target="_blank">Anthoni
+                    Broering dos Santos</a></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

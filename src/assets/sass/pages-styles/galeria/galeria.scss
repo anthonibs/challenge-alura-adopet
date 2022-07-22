@@ -13,11 +13,6 @@
 }
 
 .pet-gallery {
-
-    &__title {
-        font-size: 1.125rem;
-    }
-
     &__pet-image {
         display: block;
         object-fit: contain;
@@ -57,6 +52,71 @@
             width: 18px;
             background-image: url('/src/assets/imgs/ícone-mensagem.svg');
             background-repeat: no-repeat;
+        }
+    }
+}
+
+
+@media (min-width: 360px) {
+    .pet-header {
+
+        &__control {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        &__user {
+            margin-right: 0px;
+        }
+    }
+
+    .pet-gallery {
+        &__title {
+            margin-top: 2rem;
+            font-size: 1rem;
+        }
+    }
+
+    .pet-template {
+        &__ilustracao {
+            height: 100%;
+
+            &::after {
+                background-image: url(transparent);
+            }
+        }
+    }
+}
+
+@media (min-width: 772px) and (max-width: 1200px) {
+    .pet-gallery {
+        &__title {
+            margin-top: 6rem;
+            font-size: 1.125rem;
+        }
+    }
+
+    .pet-template {
+        &__ilustracao {
+            &::before {
+                height: 35%;
+                background-image: url('/src/assets/imgs/forma-1.svg');
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .pet-header {
+        &__user {
+            margin-right: 160px;
+        }
+    }
+
+    .pet-gallery {
+        &__title {
+            font-size: 1.125rem;
         }
     }
 }
