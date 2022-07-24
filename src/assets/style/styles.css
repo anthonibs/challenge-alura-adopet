@@ -44,6 +44,42 @@ body {
   text-decoration: underline;
 }
 
+.erro-container {
+  position: relative;
+}
+
+.erro-mensagem {
+  display: none;
+  position: absolute;
+  bottom: -1.3rem;
+  font-size: 0.75rem;
+  color: #FC7071;
+}
+
+.erro-container.erro-mensagem {
+  display: block;
+}
+
+#conferirSenhas {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.senhasDiferentes {
+  position: relative;
+  height: 40px;
+  color: rgb(131, 12, 12);
+  font-size: 0.875rem;
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+  line-height: 40px;
+  border-radius: 6px;
+  background-color: rgba(252, 181, 181, 0.8);
+  transition: all 0.3s;
+  z-index: 9999;
+}
+
 @media (min-width: 360px) {
   .pet-template__ilustracao {
     position: relative;
@@ -421,9 +457,6 @@ body {
   .pet-gallery__title {
     margin-top: 2rem;
     font-size: 1rem;
-  }
-  .pet-template__ilustracao {
-    height: 100%;
   }
   .pet-template__ilustracao::after {
     background-image: url(transparent);

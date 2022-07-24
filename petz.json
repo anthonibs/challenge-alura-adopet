@@ -1,0 +1,94 @@
+{
+    "petz": [
+        {
+            "id": 1,
+            "nomePet": "Dunga",
+            "idade": "2 anos",
+            "porte": "Porte pequeno",
+            "temperamento": "Calmo e educado",
+            "estado": "Rio de Janeiro (RJ)",
+            "src": "../../imgs/colletion-gallery/dunga.svg",
+            "alt": "Foto do cachorro Dunga"
+        },
+        {
+            "id": 2,
+            "nomePet": "SheHa",
+            "idade": "3 meses",
+            "porte": "Porte pequeno",
+            "temperamento": "Ativa e carinhosa",
+            "estado": "Eternia (ET)",
+            "src": "../../imgs/colletion-gallery/felicia.svg",
+            "alt": "Foto do gatinha SheHa"
+        },
+        {
+            "id": 3,
+            "nomePet": "Sirius",
+            "idade": "6 meses",
+            "porte": "Porte pequeno",
+            "temperamento": "Calmo e educado",
+            "estado": "Rio de Janeiro (RJ)",
+            "src": "../../imgs/colletion-gallery/sid.svg",
+            "alt": "Foto do cachorro Sirius"
+        },
+        {
+            "id": 4,
+            "nomePet": "Fiona",
+            "idade": "3 anos",
+            "porte": "Porte pequeno",
+            "temperamento": "Calma e carinhosa",
+            "estado": "Florianópolis (SC)",
+            "src": "../../imgs/colletion-gallery/fiona.svg",
+            "alt": "Foto do cachorrinha Fiona"
+        },
+        {
+            "id": 5,
+            "nomePet": "Sid",
+            "idade": "8 meses",
+            "porte": "Porte médio/grande",
+            "temperamento": "Brincalhão e amável",
+            "estado": "São José (SC)",
+            "src": "../../imgs/colletion-gallery/sirius.svg",
+            "alt": "Cachorrinho Sid"
+        },
+        {
+            "id": 6,
+            "nomePet": "Yoda",
+            "idade": "1 ano",
+            "porte": "Porte pequeno",
+            "temperamento": "Hiperativo e brincalhão",
+            "estado": "Florianópolis (SC)",
+            "src": "../../imgs/colletion-gallery/Yoda.svg",
+            "alt": "A força está com Gato Yoda"
+        },
+        {
+            "id": 7,
+            "nomePet": "Lua",
+            "idade": "6 meses",
+            "porte": "Porte médio",
+            "temperamento": "Ativa e carinhosa",
+            "estado": "Joinville (SC)",
+            "src": "../../imgs/colletion-gallery/Lua.svg",
+            "alt": "Gatinha Lua"
+        },
+        {
+            "id": 8,
+            "nomePet": "Amorinha",
+            "idade": "45 dias",
+            "porte": "Porte grande",
+            "temperamento": "Calma e carinhosa",
+            "estado": "Brusque (SC)",
+            "src": "../../imgs/colletion-gallery/Amora.svg",
+            "alt": "Cahorrinha fofinha Amorinha"
+        },
+        {
+            "id": 9,
+            "nomePet": "Elza",
+            "idade": "5 meses",
+            "porte": "Porte médio",
+            "temperamento": "Ativa e amável",
+            "estado": "Brusque (SC)",
+            "src": "../../imgs/colletion-gallery/elda.svg",
+            "alt": "Elza a gata princesa"
+        }
+    ]
+}

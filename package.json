@@ -1,0 +1,23 @@
+{
+  "name": "challenge-alura-adopet",
+  "version": "1.0.0",
+  "description": "Desafio Alura Adopet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anthonibs/challenge-alura-adopet.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anthonibs/challenge-alura-adopet/issues"
+  },
+  "homepage": "https://github.com/anthonibs/challenge-alura-adopet#readme",
+  "devDependencies": {
+    "json-server": "^0.17.0"
+  }
+}

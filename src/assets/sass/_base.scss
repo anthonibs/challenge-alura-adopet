@@ -48,6 +48,41 @@ body {
     }
 }
 
+.erro-container {
+    position: relative;
+}
+
+.erro-mensagem {
+    display: none;
+    position: absolute;
+    bottom: -1.3rem;
+    font-size: .75rem;
+    color: variables.$color-txt-2;
+}
+
+.erro-container.erro-mensagem {
+    display: block;
+}
+
+#conferirSenhas {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.senhasDiferentes {
+    position: relative;
+    height: 40px;
+    color: rgb(131, 12, 12);
+    font-size: .875rem;
+    margin: 0 auto;
+    margin-bottom: .5rem;
+    line-height: 40px;
+    border-radius: 6px;
+    background-color: rgba(252, 181, 181, .8);
+    transition: all .3s;
+    z-index: 9999;
+}
 
 // Template Ilustração
 @media (min-width: 360px) {
@@ -110,6 +145,10 @@ body {
             }
         }
     }
+
+    // .senhasDiferentes {
+    //     width: 90%;
+    // }
 }
 
 @media (min-width: 572px) {

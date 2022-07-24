@@ -79,8 +79,7 @@
 
     .pet-template {
         &__ilustracao {
-            height: 100%;
-
+            
             &::after {
                 background-image: url(transparent);
             }
