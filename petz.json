@@ -89,6 +89,36 @@
             "estado": "Brusque (SC)",
             "src": "../../imgs/colletion-gallery/elda.svg",
             "alt": "Elza a gata princesa"
+        },
+        {
+            "id": 10,
+            "nomePet": "Nezuko",
+            "idade": "4 semanas",
+            "porte": "Porte médio",
+            "temperamento": "Ativa e carinhosa",
+            "estado": "Joinville (SC)",
+            "src": "../../imgs/colletion-gallery/dunga.svg",
+            "alt": "Gatinha Lua"
+        },
+        {
+            "id": 11,
+            "nomePet": "Ciri",
+            "idade": "8 meses",
+            "porte": "Porte grande",
+            "temperamento": "Calma e carinhosa",
+            "estado": "Brusque (SC)",
+            "src": "../../imgs/colletion-gallery/felicia.svg",
+            "alt": "Cahorrinha fofinha Amorinha"
+        },
+        {
+            "id": 12,
+            "nomePet": "Melzinha",
+            "idade": "5 anos",
+            "porte": "Porte médio",
+            "temperamento": "Ativa e amável",
+            "estado": "Brusque (SC)",
+            "src": "../../imgs/colletion-gallery/elda.svg",
+            "alt": "Melzinha melosa"
         }
     ]
 }

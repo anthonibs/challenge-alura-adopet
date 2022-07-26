@@ -1,11 +1,11 @@
 const form = document.forms.cadastro
 const inputs = document.querySelectorAll('.pet-form__input')
+const listas = JSON.parse(localStorage.getItem('listas')) || []
 
 
 inputs.forEach(e => e.addEventListener('blur', monitora => {
     valida(monitora.target)
 }))
-
 
 function valida(input) {
 
@@ -14,7 +14,6 @@ function valida(input) {
         input.parentElement.querySelector('.erro-mensagem').innerHTML = ''
 
     } else {
-        // console.log(input.parentElement);
         input.parentElement.classList.add('erro-container')
         input.parentElement.querySelector('.erro-mensagem').innerHTML = mensagemDeErro(input.name, input)
 
@@ -62,37 +61,72 @@ function mensagemDeErro(tipoDeErro, input) {
 }
 
 
+
+
 form.addEventListener('submit', e => {
     e.preventDefault()
     console.log('Enviei o arquivo!!');
 
     const { cadnome, cademail, cadsenha, cadconfirmsenha } = form
-    // console.log(`Nome: ${cadnome.value}, E-mail: ${cademail.value}, Senha:  ${cadsenha.value}, Confirma: ${cadconfirmsenha.value}`)
 
-    confereSenhas(cadsenha, cadconfirmsenha)
 
-    // if (cadsenha.value === cadconfirmsenha.value) {
-    //     console.log("Senha está igual")
-    //     const senhaCorreta = cadsenha.value
-    //     console.log('A senha conferem +++ ', senhaCorreta);
-    //     confereSenhas(cadsenha.value, cadconfirmsenha.value)
+    const senha = confereSenhas(cadsenha, cadconfirmsenha)
 
-    // } else {
-    //     const conferirSenha = document.querySelector('#conferirSenhas')
-    //     let msg = document.createElement('div')
 
-    //     msg.innerHTML = `<div class="senhasDiferentes col-11 col-sm-9 col-md-5 col-xl-5 mx-auto">As senhas estão diferentes</div>`
+    const existe = listas.find(elemento => elemento.cademail === cademail.value)
 
-    //     conferirSenha.appendChild(msg)
+    if (!existe) {
+        console.log("Email não cadastrado");
+        salvaSenha(senha)
 
-    //     setTimeout(() => {
-    //         msg.innerHTML = ''
-    //         conferirSenha.appendChild(msg)
-    //     }, 2500);
+        cadnome.value = ''
+        cademail.value = ''
+        cadsenha.value = ''
+        cadconfirmsenha.value = ''
 
-    // }
+        window.location.href = 'http://127.0.0.1:5501/src/assets/pages/login/login.html?'
+
+
+    } else {
+        console.log("Email já cadastrado");
+        const conferirSenha = document.querySelector('#conferirSenhas')
+        let msg = document.createElement('div')
+
+        msg.innerHTML = `<div class="senhasDiferentes col-11 col-sm-9 col-md-5 col-xl-5 mx-auto"><i class="bi bi-exclamation-triangle-fill"></i>  Este email já está cadastrado.</div>`
+
+        conferirSenha.appendChild(msg)
+
+        setTimeout(() => {
+            msg.innerHTML = ''
+            conferirSenha.appendChild(msg)
+        }, 2500);
+
+    }
+
+
+    function salvaSenha(senha) {
+
+        if (senha === '') {
+            console.log('Por favor confirme sua senha corretamente.');
+
+        } else {
+
+            const itemAtual = {
+                "cadnome": cadnome.value,
+                "cademail": cademail.value,
+                "cadsenha": confereSenhas(cadsenha, cadconfirmsenha)
+            }
+
+            listas.push(itemAtual)
+        }
+
+        return
+    }
+
+    localStorage.setItem("listas", JSON.stringify(listas))
 
 })
+
 
 
 function confereSenhas(senha, confirma) {
@@ -118,55 +152,3 @@ function confereSenhas(senha, confirma) {
 
     return senhaDefinida
 }
-
-
-
-const exibirSenha = document.querySelectorAll('[passShow]')
-
-for (let i = 0; i < exibirSenha.length; i++) {
-    const selecionaInupt = document.querySelectorAll('[inputSenha]')
-
-    exibirSenha[i].addEventListener('click', e => {
-        if (selecionaInupt[i].getAttribute('type') === 'password') {
-            selecionaInupt[i].setAttribute('type', 'text')
-            trocarIcone('bi-eye-slash-fill', 'bi-eye-fill', exibirSenha[i])
-
-        } else if (selecionaInupt[i].getAttribute('type') === 'text') {
-            selecionaInupt[i].setAttribute('type', 'password')
-            trocarIcone('bi-eye-fill', 'bi-eye-slash-fill', exibirSenha[i])
-
-        } else {
-            console.log('Error no tipo do type');
-        }
-    })
-}
-
-function trocarIcone(icone1, icone2, alvo) {
-    alvo.classList.remove(icone2)
-    alvo.classList.add(icone1)
-}
-
-function emailJahCadastrado(email, dbEmail) {
-
-}
-
-const arrEmail = [
-    {
-        nome: "anthoni",
-        email: "meuemail@email.com"
-    },
-    {
-        nome: "fred maia",
-        email: "fred_fredoca@email.com"
-    },
-    {
-        nome: "Lila Maesat",
-        email: "maesat@email.com"
-    },
-    {
-        nome: "Naruto Uzumaki",
-        email: "uzumaki_kh@email.com"
-    }
-]
-
-console.log("Lista ", arrEmail);

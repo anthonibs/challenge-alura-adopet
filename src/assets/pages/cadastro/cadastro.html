@@ -28,7 +28,7 @@
         </div>
     </header>
 
-    <main class="pet-cadastro pet-template pet-template__ilustracao pet-color-bg-custom">
+    <main class="pet-cadastro pet-template pet-template__ilustracao pet-color-bg-custom" style="height: 100vh;">
         <section class="pet-template__figure h-100">
             <div class="container">
                 <div class="row">
@@ -62,10 +62,10 @@
                             <fieldset class="mb-4 col-md-12 col-xl-9 mx-auto">
                                 <label for="input-password" class="form-label pet-form__label">Senha</label>
                                 <div class="d-flex position-relative align-items-center">
-                                    <input type="password" name="cadsenha" 
+                                    <input type="password" name="cadsenha"
                                         class="form-control pet-form__input text-center" id="input-password"
                                         placeholder="Crie uma senha" pattern="^[0-9A-zÇç]{8,12}$" minlength="8"
-                                        maxlength="12" required inputSenha>
+                                        maxlength="12" inputSenha required>
                                     <i passShow class="bi bi-eye-slash-fill position-absolute"></i>
                                     <span class="erro-mensagem col-12 mx-auto"></span>
                                 </div>
@@ -77,7 +77,7 @@
                                 <div class="d-flex position-relative align-items-center">
                                     <input type="password" class="form-control pet-form__input text-center"
                                         id="input-Confirmpassword" placeholder="Repita a senha criada" minlength="8"
-                                        maxlength="12" name="cadconfirmsenha" required inputSenha>
+                                        maxlength="12" name="cadconfirmsenha" inputSenha required>
                                     <i passShow class="bi bi-eye-slash-fill position-absolute"></i>
                                 </div>
                             </fieldset>
@@ -105,7 +105,9 @@
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
 
-    <script src="../../js/cadastroUsuario.js"></script>
+
+    <script src="/src/assets/js/cadastroUsuario.js"></script>
+    <script src="/src/assets/js/mostrarSenha.js"></script>
 </body>
 
 </html>

@@ -60,14 +60,15 @@ body {
     color: variables.$color-txt-2;
 }
 
-.erro-container.erro-mensagem {
+.erro-container > .erro-mensagem {
     display: block;
 }
 
-#conferirSenhas {
+#conferirSenhas, #mensagem {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 9999;
 }
 
 .senhasDiferentes {
@@ -92,7 +93,7 @@ body {
             position: relative;
             width: 100%;
             overflow: hidden;
-            height: calc(100vh - 60px);
+            height: calc(100% - 60px);
 
             &::before {
                 content: '';
