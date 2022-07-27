@@ -7,6 +7,39 @@ body {
   z-index: -1;
 }
 
+@keyframes preloader {
+  0% {
+    background-color: #8cacf8;
+    visibility: visible;
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.preloader {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  z-index: 9999;
+  animation: preloader 2s ease-out forwards;
+}
+
+.preloader:not(.active-preloader) {
+  display: none;
+}
+
 .color-bg-button {
   background-color: #FC7071;
   z-index: 1000;

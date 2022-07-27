@@ -1,5 +1,6 @@
 const exibirSenha = document.querySelectorAll('[passShow]')
 
+// Exibe e esconde a senha no input password, alterando password para text
 for (let i = 0; i < exibirSenha.length; i++) {
     const selecionaInupt = document.querySelectorAll('[inputSenha]')
 
@@ -18,6 +19,7 @@ for (let i = 0; i < exibirSenha.length; i++) {
     })
 }
 
+// Troca ícone
 function trocarIcone(icone1, icone2, alvo) {
     alvo.classList.remove(icone2)
     alvo.classList.add(icone1)

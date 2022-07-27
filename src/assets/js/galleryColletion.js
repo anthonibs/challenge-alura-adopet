@@ -1,7 +1,7 @@
 const dbPetz = "http://localhost:3000/petz"
 const list = document.getElementById('list-petz')
 
-
+// Busca a url com as informações dos petz para adoção
 window.onload = () => {
     fetch(dbPetz)
         .then(res => res.json())
@@ -10,7 +10,7 @@ window.onload = () => {
         }))
 }
 
-
+// Template cards
 function gerarLista(lista) {
     const template = `
     <article class="col-sm-6 col-xl-4 mb-5">

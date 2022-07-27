@@ -1,8 +1,6 @@
 const local = JSON.parse(localStorage.getItem('listas'))
 const formLogin = document.forms.login
 
-console.log("LISTA>", local);
-
 
 formLogin.addEventListener('submit', e => {
     e.preventDefault()
@@ -24,8 +22,7 @@ formLogin.addEventListener('submit', e => {
 
     if (logado && senhaLogada) {
         console.log("Entrei na minha conta");
-        // cademail.value = ''
- 
+       
         const userValid = {
             email: logado.cademail,
             senha: senhaLogada.cadsenha
